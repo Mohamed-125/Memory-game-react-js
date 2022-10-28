@@ -7,62 +7,62 @@ function App() {
   const imgs = [
     {
       img: "https://seeklogo.com/images/H/html5-logo-EF92D240D7-seeklogo.com.png",
-      id: Math.random(),
+      id: Math.random() * 57234757045804,
       matched: false,
     },
     {
       img: "https://seeklogo.com/images/C/css-3-logo-AF06D75231-seeklogo.com.png",
-      id: Math.random(),
+      id: Math.random() * 57234757045804,
       matched: false,
     },
     {
       img: "https://mpng.subpng.com/20190627/ttx/kisspng-javascript-computer-icons-scalable-vector-graphics-list-of-javascript-enhancements-fandom-developers-5d145895b06253.7824611015616144857225.jpg",
-      id: Math.random(),
+      id: Math.random() * 57234757045804,
       matched: false,
     },
     {
       img: "https://spng.subpng.com/20180815/ta/kisspng-sass-logo-cascading-style-sheets-scalable-vector-g-codzero-cms-blog-tool-publishing-platform-5b74aaa0a0f4b2.3928971215343725126593.jpg",
-      id: Math.random(),
+      id: Math.random() * 57234757045804,
       matched: false,
     },
     {
       img: "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png",
-      id: Math.random(),
+      id: Math.random() * 57234757045804,
       matched: false,
     },
     {
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png",
-      id: Math.random(),
+      id: Math.random() * 57234757045804,
       matched: false,
     },
     {
       img: "https://seeklogo.com/images/H/html5-logo-EF92D240D7-seeklogo.com.png",
-      id: Math.random(),
+      id: Math.random() * 57234757045804,
       matched: false,
     },
     {
       img: "https://seeklogo.com/images/C/css-3-logo-AF06D75231-seeklogo.com.png",
-      id: Math.random(),
+      id: Math.random() * 57234757045804,
       matched: false,
     },
     {
       img: "https://mpng.subpng.com/20190627/ttx/kisspng-javascript-computer-icons-scalable-vector-graphics-list-of-javascript-enhancements-fandom-developers-5d145895b06253.7824611015616144857225.jpg",
-      id: Math.random(),
+      id: Math.random() * 57234757045804,
       matched: false,
     },
     {
       img: "https://spng.subpng.com/20180815/ta/kisspng-sass-logo-cascading-style-sheets-scalable-vector-g-codzero-cms-blog-tool-publishing-platform-5b74aaa0a0f4b2.3928971215343725126593.jpg",
-      id: Math.random(),
+      id: Math.random() * 57234757045804,
       matched: false,
     },
     {
       img: "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png",
-      id: Math.random(),
+      id: Math.random() * 57234757045804,
       matched: false,
     },
     {
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png",
-      id: Math.random(),
+      id: Math.random() * 57234757045804,
       matched: false,
     },
   ];
@@ -73,7 +73,11 @@ function App() {
     setCards((pre) => {
       return pre
         .map((img) => {
-          return { ...img, id: Math.random(), matched: false };
+          return {
+            ...img,
+            id: Math.random() * 57234757045804,
+            matched: false,
+          };
         })
         .sort((a, b) => a.id - b.id);
     });
